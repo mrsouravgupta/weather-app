@@ -1,0 +1,136 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.weather-app {
+  background: url("images/pink-gradient-spring-landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+.weather {
+  height: calc(100vh - 24px);
+  color: white;
+}
+.search {
+  border-right: 0;
+}
+.location {
+  font-size: 3.5rem;
+}
+.datetime {
+  font-size: 1.25rem;
+}
+.temperature .temperature-magnitude {
+  font-size: 7.25rem;
+  font-weight: 100;
+  line-height: 1em;
+}
+.temperature .temperature-magnitude-sm {
+  font-size: 1rem;
+}
+.temperature .temperature-unit {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+.temperature .temperature-unit .clickable {
+  cursor: pointer;
+  color: #9aa0a6;
+}
+.temperature .temperature-unit .clickable.active {
+  color: #fff;
+}
+.temperature .temperature-unit-sm {
+  font-size: 1rem;
+}
+.description .description-main {
+  font-weight: 400;
+}
+.icon {
+  font-size: 6rem;
+  line-height: 1em;
+}
+.icon-sm {
+  font-size: 1.5rem;
+}
+.input-group-text {
+  background-color: white;
+  border-left: 0;
+  min-width: 41px;
+}
+.input-group:focus-within {
+  border-color: #ced4da;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.input-group:focus-within *:focus {
+  outline: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+.forecast {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.forecast.active {
+  border-color: white;
+}
+.alert {
+  position: fixed;
+  z-index: 9999;
+  right: 1rem;
+  top: 1.5rem;
+  padding: 0.4rem;
+  margin: 0;
+}
+/* Small devices (portrait tablets and large phones, 570px and up) */
+@media only screen and (min-width: 570px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .input-group {
+    max-width: 480px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  .input-group {
+    max-width: 480px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+  .input-group {
+    max-width: 480px !important;
+  }
+}
+
+/* 4k devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1441px) {
+  html {
+    font-size: 32px;
+  }
+  .input-group {
+    max-width: 640px !important;
+  }
+}
